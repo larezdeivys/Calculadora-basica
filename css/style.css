@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body, html{
+	width: 100%;
+	min-height: 100vh;
+	font-size: 20px;
+	background: coral;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.calculadora{
+	background: #222;
+	width: 15rem;
+	height: 20rem;
+	padding: 1rem;
+	border-radius: 1rem;
+	box-shadow: .5rem .5rem .5rem #444 inset,
+				-0.5rem -0.5rem .5rem #010101 inset,
+				.25rem .25rem .5rem rgba(0, 0, 0, .8);
+	color: #fff;
+	position: relative;
+}
+
+.h1{
+	font-size: 1.2rem;
+	margin-top: 1rem;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.resultado{
+	width: 13rem;
+	height: 2.5rem;
+	margin-top: 1rem;
+	padding-right: 0.6rem;
+	/*background: lightgreen;*/
+	/*background: #444;
+	filter: sepia(100%) hue-rotate(100deg);*/
+	background: rgb(54, 97, 62);
+	border-radius: .5rem;
+	font-family: monospace;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	font-size: 2rem;
+	letter-spacing: .05rem;
+	color: rgba(0, 0, 0, .7);
+	border: .1rem solid #000;
+}
+
+.calcular{
+	width: 13rem;/*
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;*/
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	column-gap: .5rem;
+	margin-top: 1.5rem;
+}
+
+.btn{
+	width: 2.2rem;
+	height: 1.7rem;
+	border-radius: .5rem;
+	margin-bottom: .5rem;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	font-size: .8rem;
+	background: #444;
+	box-shadow: .25rem .25rem .25rem #555 inset,
+				-0.25rem -0.25rem .25rem #222 inset,
+				.1rem .1rem .25rem rgba(0, 0, 0, .8);
+}
+
+.num{
+	background: #aaa;
+	box-shadow: .25rem .25rem .25rem #ccc inset,
+				-0.25rem -0.25rem .25rem #888 inset,
+				.1rem .1rem .25rem rgba(0, 0, 0, .8);
+
+}
+
+.sumar{
+	height: 4rem;
+	filter: sepia(100%) hue-rotate(180deg);
+}
+
+.ac{
+	filter: sepia(100%) hue-rotate(270deg);
+}
+
+.ult{
+	position: relative;
+	bottom: 2.3rem;
+}
+
+.borrar .borrar{
+	width: 1.5rem;
+}
+
+@media (max-width: 330px) {
+	body, html{
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 300px) {
+	body, html{
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 250px) {
+	body, html{
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 220px) {
+	body, html{
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 190px) {
+	body, html{
+		font-size: 10px;
+	}
+}
+
+@media (min-width: 400px) {
+	body, html{
+		font-size: 22px;
+	}
+}
+
+@media (min-width: 1200px) {
+	body, html{
+		font-size: 30px;
+	}
+}
+
+@media (min-width: 1800px) {
+	body, html{
+		font-size: 35px;
+	}
+}
+
+@media (min-width: 2200px) {
+	body, html{
+		font-size: 40px;
+	}
+}
